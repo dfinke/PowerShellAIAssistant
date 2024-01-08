@@ -15,18 +15,45 @@
   <a href="https://www.powershellgallery.com/packages/PowerShellAIAssistant/">
     <img src="https://img.shields.io/powershellgallery/dt/PowerShellAIAssistant.svg">
   </a> -->
-  <!-- <a href="https://github.com/dfinke/PSAdvantage/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache-orange.svg?logo=openbsd&style=flat-square">
-  </a> -->
 </p> 
 
-# PowerShell AI Assistant
+
+Example code accomplishing common tasks with the [OpenAI API](https://platform.openai.com/docs/introduction). To run these examples
+
+First, create an [OpenAI account](https://platform.openai.com/signup) or [sign in](https://platform.openai.com/login). Next, navigate to the [API key page](https://platform.openai.com/account/api-keys) and "Create new secret key", optionally naming the key. Make sure to save this somewhere safe and do not share it with anyone.
+
+Run the [Sanity-Check](/examples/Sanity-Check.ps1) script first. You need the API key to run it. It creates and deletes a assistant on the backend. If it works, you're good to go.
+
+> Note: `Get-OAIAssistant` requires PowerShell 7.4 or higher. It needs the `AllowInsecureRedirect` parameter, a workaround is being investigated.
+
+If you don't have PowerShell 7.4 or higher, you can use CodeSpaces to run the example. Click the button below to open CodeSpaces.
+
+<!-- 
+query {
+  repository (name: "powershellaiassistant-prerelease", owner: "dfinke")  {
+        databaseId
+  }
+}
+-->
+
+<a href="https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=739751034&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=East">
+     <img src="https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github"/>
+</a>
+<br/>
+
+----
 
 Welcome to `PowerShell AI Assistant`, a module designed for seamless integration with `OpenAI Assistant` APIs, providing a rich set of functionalities to empower your PowerShell scripts with the latest AI technologies. Dive into an enhanced scripting experience by leveraging an AI-powered assistant in your console.
 
 ## Why PowerShell AI Assistant?
 
 `PowerShell AI Assistant` is where advanced AI meets PowerShell scripting. With this module, you can create interactive, intelligent scripts and applications that understand and process natural language with ease.
+
+## Examples
+
+There is one example and it is in a Polyglot Interactive Notebook.
+
+[Assistants API overview](examples/Assistants_API_overview.ipynb) - this notebook shows how to use the Assistants API to build a simple question answering interaction.
 
 ## Features
 
