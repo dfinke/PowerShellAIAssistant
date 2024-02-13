@@ -12,7 +12,8 @@ The New-OAIThread function sends a POST request to the OpenAI API to create a ne
 None. You cannot pipe input to this function.
 
 .OUTPUTS
-None. The function does not generate any output.
+System.Object
+The output consists of an object with the created thread id and some metadata.
 
 .EXAMPLE
 New-OAIThread
